@@ -1,11 +1,11 @@
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
-import { Welcome } from '../components/Welcome/Welcome';
+import { Group } from '@mantine/core';
+import { NavBar } from '@/components/NavBar/NavBar';
 
 export function HomePage() {
   return (
-    <>
-      <Welcome />
-      <ColorSchemeToggle />
-    </>
+    <Group>
+      <NavBar />
+      <div>Hello!</div>
+    </Group>
   );
 }
