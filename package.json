@@ -17,12 +17,14 @@
     "vitest:watch": "vitest",
     "test": "npm run typecheck && npm run prettier && npm run lint && npm run vitest && npm run build",
     "storybook": "storybook dev -p 6006",
-    "storybook:build": "storybook build"
+    "storybook:build": "storybook build",
+    "firebase:emulators": "firebase emulators:start"
   },
   "dependencies": {
     "@mantine/core": "7.17.1",
     "@mantine/hooks": "7.17.1",
     "@tabler/icons-react": "^3.30.0",
+    "firebase": "^11.4.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.3",

@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import classes from './NavBar.module.scss';
-import { IconHome, IconLogout, IconPaw } from '@tabler/icons-react';
+import { IconHome, IconPaw } from '@tabler/icons-react';
 import { Group, Title } from '@mantine/core';
+import AuthBtns from '../AppAuth/AuthBtns/AuthBtns';
 
 const data = [
-  { link: '', label: 'Home', icon: IconHome },
-  { link: '', label: 'Animals', icon: IconPaw },
+  { link: '/home', label: 'Home', icon: IconHome },
+  { link: '/animals', label: 'Animals', icon: IconPaw },
 ];
 
 export function NavBar() {
@@ -39,10 +40,7 @@ export function NavBar() {
       </div>
 
       <div className={classes.footer}>
-        <a href="#" className={classes.link} onClick={(event) => event.preventDefault()}>
-          <IconLogout className={classes.linkIcon} stroke={1.5} />
-          <span>Logout</span>
-        </a>
+        <AuthBtns />
       </div>
     </nav>
   );
